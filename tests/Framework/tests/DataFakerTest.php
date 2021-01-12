@@ -3,7 +3,6 @@
 namespace Omnipay\BlueSnap\Test\Framework;
 
 use Omnipay\Tests\TestCase;
-use Omnipay\Common\Currency;
 use DateTime;
 use Omnipay\BlueSnap\UrlParameter;
 use Omnipay\BlueSnap\UrlParameterBag;

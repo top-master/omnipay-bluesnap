@@ -4,7 +4,6 @@ namespace Omnipay\BlueSnap\Test\Framework;
 
 use DateTime;
 use InvalidArgumentException;
-use Omnipay\Common\Currency;
 use Omnipay\BlueSnap\UrlParameter;
 use Omnipay\BlueSnap\UrlParameterBag;
 use Omnipay\BlueSnap\Constants;

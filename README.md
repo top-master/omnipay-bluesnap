@@ -1,12 +1,12 @@
-# Omnipay: BlueSnap
+# Omnipay v3 : BlueSnap
 
 **BlueSnap driver for the Omnipay PHP payment processing library**
 
-_NOTE: At this time, this driver only provides full support for BlueSnap's [BuyNow Hosted Checkout](https://home.bluesnap.com/features-tools/flexible-integration-options/hosted-checkout/) product. But you can add support for more parts of the API!_
+_NOTE: At this time, this driver only provides full support for BlueSnap's [BuyNow Hosted Checkout](https://support.bluesnap.com/docs/intro-hosted-checkout) product. But you can add support for more parts of the API!_
 
-[![Build Status](https://travis-ci.org/vimeo/omnipay-bluesnap.png?branch=master)](https://travis-ci.org/vimeo/omnipay-bluesnap)
-[![Latest Stable Version](https://poser.pugx.org/vimeo/omnipay-bluesnap/version.png)](https://packagist.org/packages/vimeo/omnipay-bluesnap)
-[![Total Downloads](https://poser.pugx.org/vimeo/omnipay-bluesnap/d/total.png)](https://packagist.org/packages/vimeo/omnipay-bluesnap)
+[![Build Status](https://travis-ci.org/top-master/omnipay-bluesnap.png?branch=master)](https://travis-ci.org/top-master/omnipay-bluesnap)
+[![Latest Stable Version](https://poser.pugx.org/top-master/omnipay-bluesnap/version.png)](https://packagist.org/packages/top-master/omnipay-bluesnap)
+[![Total Downloads](https://poser.pugx.org/top-master/omnipay-bluesnap/d/total.png)](https://packagist.org/packages/top-master/omnipay-bluesnap)
 
 [Omnipay](https://github.com/thephpleague/omnipay) is a framework agnostic, multi-gateway payment processing library for PHP 5.3+. This package implements BlueSnap support for Omnipay.
 
@@ -14,35 +14,45 @@ _NOTE: At this time, this driver only provides full support for BlueSnap's [BuyN
 
 ## Installation
 
-Omnipay is installed via [Composer](http://getcomposer.org/). To install, simply add it to your `composer.json` file:
+Omnipay is installed via [Composer](http://getcomposer.org/).
+To install, simply add it to your `composer.json` file:
 
 ```json
 {
     "require": {
-        "vimeo/omnipay-bluesnap": "2.0.*"
+        "top-master/omnipay-bluesnap": "3.0.*"
     }
 }
 ```
 
 And run composer to update your dependencies:
 
-```
-$ curl -s http://getcomposer.org/installer | php
-$ php composer.phar update
+```sh
+curl -s http://getcomposer.org/installer | php
+php composer.phar update
 ```
 
-_(Note that we recommend pinning the minor version. While `v2.*` will remain fully compatible with Omnipay 2, features added in addition to the base Omnipay features, such as subscriptions, may have breaking changes in a minor version bump.)_
+_(Note that we recommend pinning the minor version.
+While `v3.*` will remain fully compatible with Omnipay 3,
+features added in addition to the base Omnipay features,
+such as subscriptions, may have breaking changes in a minor version bump.)_
 
 ## Basic Usage
 
 The following gateways are provided by this package:
 
-* BlueSnap_HostedCheckout, for [BlueSnap's BuyNow Hosted Checkout](https://support.bluesnap.com/v2.2.7/docs/intro-extended-api) page.
+* BlueSnap_HostedCheckout, for
+[BlueSnap's BuyNow Hosted Checkout](https://support.bluesnap.com/docs/intro-extended-api) page.
 
 Some features of the following gateways are provided, but not enough to use them on their own. Feel free to contribute!
 
-* BlueSnap, for BlueSnap's traditional [Payment API](https://developers.bluesnap.com/v8976-JSON/docs). This gateway is almost entirely unimplemented at this time, except for parts of the [Reporting API](https://developers.bluesnap.com/v8976-Tools/docs).
-* BlueSnap\_Extended, for the BlueSnap [Extended Payment API](https://support.bluesnap.com/v2.2.7/docs/intro-extended-api). This is the API you should use if you're hosting your product catalog with BlueSnap. It powers the BuyNow Hosted Checkout, as well as other products. Enough of this API is implemented in this driver to power the BlueSnap\_HostedCheckout gateway.
+* BlueSnap, for BlueSnap's traditional [Payment API](https://developers.bluesnap.com/v8976-JSON/docs).
+This gateway is almost entirely unimplemented at this time,
+except for parts of the [Reporting API](https://developers.bluesnap.com/v8976-Tools/docs).
+* BlueSnap\_Extended, for the BlueSnap [Extended Payment API](https://developers.bluesnap.com/v8976-Extended/docs).
+This is the API you should use if you're hosting your product catalog with BlueSnap.
+It powers the BuyNow Hosted Checkout, as well as other products.
+Enough of this API is implemented in this driver to power the BlueSnap\_HostedCheckout gateway.
 
 ### Simple Example
 
@@ -93,7 +103,7 @@ BlueSnap accounts have a separate username and password for test mode. There is 
 
 ## Support
 
-If you believe you have found a bug, please report it using the [GitHub issue tracker](https://github.com/Vimeo/omnipay-bluesnap/issues), or better yet, fork the library and submit a pull request.
+If you believe you have found a bug, please report it using the [GitHub issue tracker](https://github.com/top-master/omnipay-bluesnap/issues), or better yet, fork the library and submit a pull request.
 
 If you are having general issues with Omnipay, we suggest posting on [Stack Overflow](http://stackoverflow.com/). Be sure to add the
 [omnipay tag](http://stackoverflow.com/questions/tagged/omnipay) so it can be easily found.

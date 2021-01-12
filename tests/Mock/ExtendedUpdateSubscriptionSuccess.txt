@@ -5,3 +5,4 @@ Set-Cookie: JSESSIONID=1234567890ABCDEF1234567890ABCDEF; Path=/services/; Secure
 Content-Length: 0
 F5: /Common/Sandbox-vlan10-https 10.11.10.50%10 443
 Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+

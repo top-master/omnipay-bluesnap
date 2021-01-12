@@ -1,5 +1,5 @@
 {
-    "name": "vimeo/omnipay-bluesnap",
+    "name": "top-master/omnipay-bluesnap",
     "type": "library",
     "description": "BlueSnap driver for the Omnipay payment processing library",
     "keywords": [
@@ -10,7 +10,7 @@
         "payment",
         "bluesnap"
     ],
-    "homepage": "https://github.com/vimeo/omnipay-bluesnap",
+    "homepage": "https://github.com/top-master/omnipay-bluesnap",
     "license": "MIT",
     "authors": [
         {
@@ -25,11 +25,12 @@
         }
     },
     "require": {
-        "omnipay/common": "~2.0",
-        "vimeo/payment-gateway-logger": "^1.0",
-        "ext-simplexml": "*"
+        "php": "^7.2.5",
+        "ext-simplexml": "*",
+        "ext-json": "*",
+        "omnipay/common": "^3"
     },
     "require-dev": {
-        "omnipay/tests": "~2.0"
+        "omnipay/tests": "^3"
     }
 }

@@ -124,7 +124,7 @@ class AbstractRequestTest extends OmnipayBlueSnapTestCase
         $amount = $this->faker->monetaryAmount($currency);
         $this->request->setCurrency($currency);
         $this->assertSame($this->request, $this->request->setAmount($amount));
-        $this->assertSame($amount, $this->request->getAmount());
+        $this->assertEquals($amount, $this->request->getAmount());
     }
 
     /**
